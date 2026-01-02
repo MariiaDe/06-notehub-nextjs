@@ -5,7 +5,7 @@ import { useCallback } from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 import type { Note } from "@/types/note";
-import { deleteNote } from "@/lib/api/notes";
+import { deleteNote } from "@/lib/api";
 
 import styles from "./NoteList.module.css";
 
