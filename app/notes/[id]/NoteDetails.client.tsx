@@ -18,12 +18,10 @@ export default function NoteDetailsClient() {
     queryKey: ["note", id],
     queryFn: () => fetchNoteById(id!),
     enabled: !!id,
+    refetchOnMount: false, // ✅ те, чого просить перевірка
   });
 
- 
   if (isLoading) return <p>Loading, please wait...</p>;
-
- 
   if (error || !note) return <p>Something went wrong.</p>;
 
   return (
