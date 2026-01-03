@@ -43,7 +43,7 @@ export default function NoteList({ notes }: NoteListProps) {
           <div className={styles.footer}>
             <span className={styles.tag}>{note.tag}</span>
 
-            {/* ✅ додали View details перед Delete */}
+            
             <Link href={`/notes/${note.id}`} className={styles.button}>
               View details
             </Link>
